@@ -1,5 +1,7 @@
 package org.zakaria.whatsappsenderselenium.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
@@ -81,6 +83,7 @@ public class MessageRequest {
      *
      * @param isGroup {@code true} if the recipient is a group, {@code false} otherwise
      */
+    @JsonProperty("isGroup")
     public void setGroup(boolean isGroup) {
         this.isGroup = isGroup;
     }
