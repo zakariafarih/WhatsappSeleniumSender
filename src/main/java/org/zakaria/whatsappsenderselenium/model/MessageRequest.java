@@ -81,7 +81,7 @@ public class MessageRequest {
      *
      * @param isGroup {@code true} if the recipient is a group, {@code false} otherwise
      */
-    public void setGroup(boolean isGroup) {
+    public void setIsGroup(boolean isGroup) {
         this.isGroup = isGroup;
     }
 }
